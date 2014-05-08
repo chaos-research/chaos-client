@@ -1,0 +1,36 @@
+///* Sticky footer styles
+//-------------------------------------------------- */
+//If a footer is used, need to ensure that it adjusts depending on whether
+//the sidebar nav is present, so it may need to be handled in the html
+//(i.e. placed in the 'content' div)
+
+//$page-margin-bottom: 31px;
+//
+//html {
+//  position: relative;
+//  min-height: 100%;
+//}
+//
+//body {
+//  /* Margin bottom by footer height */
+//  margin-bottom: $page-margin-bottom;
+//}
+//.footer {
+//  position: absolute;
+//  bottom: 0;
+//  border-top-width: 1px;
+//  border-top-style: solid;
+//  width: 100%;
+//  /* Set the fixed height of the footer here */
+//  height: $page-margin-bottom;
+//}
+//
+//.footer-default {
+//  border-bottom-color: $footer-default-border;
+//  background-color: $footer-default-bg;
+//  color: $footer-default-color;
+//}
+//
+//.footer {
+//  float: right !important;
+//}
