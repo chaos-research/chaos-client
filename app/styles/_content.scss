@@ -7,11 +7,15 @@ body {
  */
 .content {
   margin-top: $navbar-height + 15px;
-  margin-left: 15px;
-  margin-right: 15px;
   padding: 20px;
   background-color: $white;
 }
+
+.content-well {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .content .page-header {
   margin-top: 0;
 }

@@ -14,137 +14,11 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
-    <script data-require="jquery@*" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script data-require="angular.js@*" data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular.js"></script>
-    <script data-require="angular-ui-bootstrap@*" data-semver="0.10.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.min.js"></script>
-    <script data-require="angular-ui-router@0.2.7" data-semver="0.2.7" src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
     <link rel="stylesheet" href="styles/main.css" />
     <!-- endbuild -->
   </head>
   <body ng-app="chaos">
-
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" ui-sref="home">Chaos</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Study<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-header">Contact Mgmt</li>
-              <li><a ui-sref="participant">View Participants</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Events</li>
-              <li><a ui-sref="event.schedule">Schedule Event</a></li>
-              <li><a ui-sref="event.create">Create Event</a></li>
-              <li><a ui-sref="event.view">View Events</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Laboratory <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-header">Processing</li>
-              <li><a ui-sref="nowhere">Process Samples</a></li>
-              <li><a ui-sref="nowhere">Create Processing Plan</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Testing</li>
-              <li><a ui-sref="nowhere">Assay Setup</a></li>
-              <li><a ui-sref="nowhere">Assay QC</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Storage</li>
-              <li><a ui-sref="nowhere">Freezer Management</a></li>
-              <li><a ui-sref="nowhere">Storage Containers</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Shipping & Receiving</li>
-              <li><a ui-sref="nowhere">Sample Shipping</a></li>
-              <li><a ui-sref="nowhere">Sample Receiving</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown">Data <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-header">Import</li>
-              <li><a ui-sref="data.import">Import Data</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Export</li>
-              <li><a ui-sref="data.reports">Reports</a></li>
-              <li><a ui-sref="data.exports">Analysis Exports</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown">Administration <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-header"> Study Administration</li>
-              <li><a ui-sref="nowhere">Create Study</a></li>
-              <li><a ui-sref="nowhere">Create Questionnaires (CRFs)</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header"> Application Administration</li>
-              <li><a ui-sref="studyCenters">Study Centers</a></li>
-              <li><a ui-sref="populations">Populations</a></li>
-              <li><a ui-sref="materials">Materials</a></li>
-              <li><a ui-sref="users">Users</a></li>
-              <li><a ui-sref="dataImport">Import Data</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header"> System Administration</li>
-              <li><a ui-sref="system.environment">Environment</a></li>
-              <li><a ui-sref="system.API">API</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a id="help" ui-sref="help">Help</a></li>
-          <li class="dropdown">
-            <a id="user" class="dropdown-toggle" data-toggle="dropdown">User <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a ui-sref="currentUser.profile">Profile</a></li>
-              <li><a ui-sref="currentUser.settings">Settings</a></li>
-              <li class="divider"></li>
-              <li><a ui-sref="logout">Logout</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-  </div>
-  <div class="row">
-    <!-- Sidebar nav section -->
-    <div class="col-sm-3 col-md-2 sidebar sidebar-default">
-      <h4>Something</h4>
-      <ul class="nav nav-sidebar">
-        <li class="active"><a href="#">Overview</a></li>
-        <li><a href="#">Reports</a></li>
-        <li><a href="#">Analytics</a></li>
-        <li><a href="#">Export</a></li>
-      </ul>
-      <h4>Something Else</h4>
-      <ul class="nav nav-sidebar">
-        <li><a href="">Nav item</a></li>
-        <li><a href="">Nav item again</a></li>
-        <li><a href="">One more nav</a></li>
-        <li><a href="">Another nav item</a></li>
-        <li><a href="">More navigation</a></li>
-      </ul>
-      <ul class="nav nav-sidebar">
-        <li><a href="">Nav item again</a></li>
-        <li><a href="">One more nav</a></li>
-        <li><a href="">Another nav item</a></li>
-      </ul>
-    </div>
-    <!-- Content section -->
-    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
-      <div class="container-fluid content" ui-view="">
-        <h1 class="page-header">Page Header</h1>
-        <p>Actual content</p>
-        <div>something else</div>
-      </div>
-    </div>
+    <ui-view></ui-view>
   </div>
 
     <!--[if lt IE 9]>
@@ -156,18 +30,7 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/ua-security/dist/ua-security.js"></script>

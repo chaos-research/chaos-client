@@ -1,0 +1,10 @@
+<div class="login">
+  <form class="form-signin" role="form">
+    <div ng-if="message" class="alert-warning">
+      {{message}}
+    </div>
+    <input type="text" class="form-control" placeholder="username" ng-model="user.username" required autofocus>
+    <input type="password" class="form-control" placeholder="Password" ng-model="user.password" required>
+    <a ui-sref='main.home' class="btn btn-primary btn-block">Login</a>
+  </form>
+</div>

@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar nav section -->
+      <div class="col-sm-3 col-md-2 sidebar sidebar-default">
+
+        <h4>Study</h4>
+        <ul class="nav nav-sidebar">
+          <li><a ui-sref="main.studyMgmt.home">Overview</a></li>
+        </ul>
+
+        <h4>Contact Mgmt</h4>
+        <ul class="nav nav-sidebar">
+          <li><a ui-sref="participant">View Participants</a></li>
+        </ul>
+
+        <h4>Events</h4>
+        <ul class="nav nav-sidebar">
+          <li><a ui-sref="event.schedule">Schedule Event</a></li>
+          <li><a ui-sref="event.create">Create Event</a></li>
+          <li><a ui-sref="event.view">View Events</a></li>
+        </ul>
+
+        <h4>Reporting</h4>
+        <ul class="nav nav-sidebar">
+          <li><a href="#">IRB Reports</a></li>
+          <li><a href="#">Recruitment</a></li>
+        </ul>
+      </div>
+
+      <!-- Content section -->
+      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+        <div class="container-fluid content content-well" ui-view=""></div>
+      </div>
+    </div>
+  </div>
+</div>

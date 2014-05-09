@@ -1,0 +1,34 @@
+<div class="row">
+  <!-- Sidebar nav section -->
+  <div class="col-sm-3 col-md-2 sidebar sidebar-default">
+
+    <h4>Laboratory</h4>
+    <ul class="nav nav-sidebar">
+      <li><a ui-sref="main.lab.home">Overview</a></li>
+    </ul>
+    <h4>Processing</h4>
+    <ul class="nav nav-sidebar">
+      <li><a ui-sref="nowhere">Process Samples</a></li>
+      <li><a ui-sref="nowhere">Create Processing Plan</a></li>
+    </ul>
+    <h4>Testing</h4>
+    <ul class="nav nav-sidebar">
+      <li><a ui-sref="nowhere">Assay Setup</a></li>
+      <li><a ui-sref="nowhere">Assay QC</a></li>
+    </ul>
+    <h4>Storage</h4>
+    <ul class="nav nav-sidebar">
+      <li><a ui-sref="main.lab.freezerManagement">Freezer Management</a></li>
+      <li><a ui-sref="nowhere">Storage Containers</a></li>
+    </ul>
+    <h4>Shipping & Receiving</h4>
+    <ul class="nav nav-sidebar">
+      <li><a ui-sref="nowhere">Sample Shipping</a></li>
+      <li><a ui-sref="nowhere">Sample Receiving</a></li>
+    </ul>
+  </div>
+  <!-- Content section -->
+  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+    <div class="container-fluid content content-well" ui-view=""></div>
+  </div>
+</div>

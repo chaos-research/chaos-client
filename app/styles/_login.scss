@@ -1,0 +1,45 @@
+.login {
+  height: 100vh;
+  background: url('../images/lab.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding-top: 150px;
+  margin: 0 auto;
+
+  .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  input {
+    border: 0px solid #000000;
+    color: $white;
+    border-bottom-width: 1px;
+    background-color: transparent;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &[type="text"] {
+      margin-bottom: -1px;
+      border-radius: 0;
+    }
+
+    &[type="password"] {
+      margin-bottom: 10px;
+      border-radius: 0;
+    }
+  }
+}
