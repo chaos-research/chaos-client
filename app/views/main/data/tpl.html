@@ -1,0 +1,22 @@
+<div class="row">
+  <!-- Sidebar nav section -->
+  <div class="col-sm-3 col-md-2 sidebar sidebar-default">
+    <h4>Data</h4>
+    <ul class="nav nav-sidebar">
+      <li><a ui-sref="main.data.home">Overview</a></li>
+    </ul>
+    <h4>Import</h4>
+    <ul class="nav nav-sidebar">
+      <li><a ui-sref="data.import">Import Data</a></li>
+    </ul>
+    <h4>Export</h4>
+    <ul class="nav nav-sidebar">
+      <li><a ui-sref="data.reports">Reports</a></li>
+      <li><a ui-sref="data.exports">Analysis Exports</a></li>
+    </ul>
+  </div>
+  <!-- Content section -->
+  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+    <div class="container-fluid content content-well" ui-view=""></div>
+  </div>
+</div>

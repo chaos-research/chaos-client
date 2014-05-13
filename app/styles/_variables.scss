@@ -885,6 +885,40 @@ $navbar-inverse-border:            $white;
 //Site defaults
 $site-background-color: $lavender;
 
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-default-color:              $white !default;
+$btn-default-bg:                 $blue-grey-dark !default;
+$btn-default-border:             darken($btn-default-bg, 5%) !default;
+
+$btn-primary-color:              $white !default;
+$btn-primary-bg:                 $gray-slate-darker !default;
+$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+
+//$btn-success-color:              #fff !default;
+//$btn-success-bg:                 $brand-success !default;
+//$btn-success-border:             darken($btn-success-bg, 5%) !default;
+//
+//$btn-info-color:                 #fff !default;
+//$btn-info-bg:                    $brand-info !default;
+//$btn-info-border:                darken($btn-info-bg, 5%) !default;
+//
+//$btn-warning-color:              #fff !default;
+//$btn-warning-bg:                 $brand-warning !default;
+//$btn-warning-border:             darken($btn-warning-bg, 5%) !default;
+//
+//$btn-danger-color:               #fff !default;
+//$btn-danger-bg:                  $brand-danger !default;
+//$btn-danger-border:              darken($btn-danger-bg, 5%) !default;
+//
+//$btn-link-disabled-color:        $gray-light !default;
+
+
+
+//$input-border-focus: $white;  <-- desired color for login, but not everywhere else
+
 //Navbar Defaults
 
 //Sidebar Navbar Defaults

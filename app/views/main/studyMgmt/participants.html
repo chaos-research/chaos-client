@@ -1,0 +1,72 @@
+<div class="row">
+  <div class="col-md-3">
+    <h3>Search</h3>
+    <form class="form-horizontal" role="form">
+      <div class="form-group">
+        <label for="study" class="col-sm-4 control-label">Study</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="study" placeholder="IIS...">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="subjectId" class="col-sm-4 control-label">Subject ID</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="subjectId" placeholder="100101...">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="firstName" class="col-sm-4 control-label">First Name</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" id="firstName" placeholder="John...">
+        </div>
+      </div>
+      <div class="form-group">
+      	<div class="col-sm-8 col-sm-offset-4">
+      		<button type="submit" class="btn btn-primary">Search</button>
+      	</div>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-9">
+    <h3>Participant List</h3>
+    <table class="table table-condensed table-hover table-striped table-bordered">
+      <thead>
+      <tr>
+        <th>Study</th>
+        <th>Subject ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>IIS</td>
+        <td><a ui-sref="main.studyMgmt.participant">100101</a></td>
+        <td>Jane</td>
+        <td>Doe</td>
+      </tr>
+      <tr>
+        <td>IIS</td>
+        <td><a ui-sref="main.studyMgmt.participant">100201</a></td>
+        <td>John</td>
+        <td>Doe</td>
+      </tr>
+      <tr>
+        <td>IIS</td>
+        <td><a ui-sref="main.studyMgmt.participant">100301</a></td>
+        <td>Carl</td>
+        <td>Doe</td>
+      </tr>
+      </tbody>
+    </table>
+    <ul class="pagination">
+      <li><a href="#">&laquo;</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+  </div>
+</div>
