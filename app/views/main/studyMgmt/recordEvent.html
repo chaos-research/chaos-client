@@ -1,34 +1,121 @@
+<h1 class="page-header">Record Event</h1>
 <div class="row">
   <form action="" method="POST" class="form-horizontal" role="form">
 
     <div class="form-group">
       <label class="col-sm-2 control-label">Study</label>
-      <label class="col-sm-2">IIS</label>
+      <p class="form-control-static col-sm-2">IIS</p>
     </div>
     <div class="form-group">
       <label class="col-sm-2 control-label">Participant ID</label>
-      <label class="col-sm-2">100101</label>
+      <p class="form-control-static col-sm-2">100101</p>
     </div>
     <div class="form-group">
-      <label class="col-sm-2 control-label">Event</label>
-      <label class="col-sm-2">In-Depth 6</label>
+      <label class="col-sm-2 control-label">Event Type</label>
+      <p class="form-control-static col-sm-2">In-Depth 6</p>
     </div>
     <div class="form-group">
-    	<label for="eventDate" class="col-sm-2 control-label">Event Date</label>
-    	<div class="col-sm-10">
-    		<input type="date" name="eventDate" id="eventDate" class="form-control" value="" title="" required="required" >
+    	<label class="col-sm-2 control-label">Event Start</label>
+    	<div class="col-sm-5">
+    		<input type="date" name="eventStartDate" id="eventStartDate" class="form-control" value="" title="Event Start Date" required="required">
     	</div>
-    </div>
-    <div class="form-group">
-      <label for="eventTime" class="col-sm-2 control-label">Event Time</label>
-      <div class="col-sm-10">
-        <input type="time" name="eventTime" id="eventTime" class="form-control" value="" title="" required="required" >
+      <div class="col-sm-5">
+        <input type="time" name="eventStartTime" id="eventStartTime" class="form-control" value="" title="Event Start Time" required="required">
       </div>
     </div>
-
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Event End</label>
+      <div class="col-sm-5">
+        <input type="date" name="eventEndDate" id="eventEndDate" class="form-control" value="" title="Event End Date" required="required" >
+      </div>
+      <div class="col-sm-5">
+        <input type="time" name="eventEndTime" id="eventEndTime" class="form-control" value="" title="Event End Time" required="required">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h3>Samples</h3>
+            <table class="table table-hover table-condensed table-striped">
+              <thead>
+              <tr>
+                <th>Barcode</th>
+                <th>Sample Type</th>
+                <th>Amount</th>
+                <th>Aliquot</th>
+                <th>Comment</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>540001</td>
+                <td>Whole Blood - Yellow Top</td>
+                <td><input name="amount" type="text" class="form-control" placeholder="amount"></td>
+                <td><input type="text" name="aliquot" class="form-control" value="" title="" required="required" placeholder="a..."></td>
+                <td><input type="text" name="comment" class="form-control" value="" title="" required="required" placeholder="tube was..."></td>
+              </tr>
+              <tr>
+                <td>540002</td>
+                <td>Whole Blood - Yellow Top</td>
+                <td><input name="amount" type="text" class="form-control" placeholder="amount"></td>
+                <td><input type="text" name="aliquot" class="form-control" value="" title="" required="required" placeholder="a..."></td>
+                <td><input type="text" name="comment" class="form-control" value="" title="" required="required" placeholder="tube was..."></td>
+              </tr>
+              <tr>
+                <td>540003</td>
+                <td>Sputum</td>
+                <td><input name="amount" type="text" class="form-control" placeholder="amount"></td>
+                <td><input type="text" name="aliquot" class="form-control" value="" title="" required="required" placeholder="a..."></td>
+                <td><input type="text" name="comment" class="form-control" value="" title="" required="required" placeholder="tube was..."></td>
+              </tr>
+              <tr>
+                <td>540004</td>
+                <td>Saliva</td>
+                <td><input name="amount" type="text" class="form-control" placeholder="amount"></td>
+                <td><input type="text" name="aliquot" class="form-control" value="" title="" required="required" placeholder="a..."></td>
+                <td><input type="text" name="comment" class="form-control" value="" title="" required="required" placeholder="tube was..."></td>
+              </tr>
+              <tr>
+                <td>540005</td>
+                <td>EBC</td>
+                <td><input name="amount" type="text" class="form-control" placeholder="amount"></td>
+                <td><input type="text" name="aliquot" class="form-control" value="" title="" required="required" placeholder="a..."></td>
+                <td><input type="text" name="comment" class="form-control" value="" title="" required="required" placeholder="tube was..."></td>
+              </tr>
+              </tbody>
+            </table>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-offset-2">
+          <h3>Questionnaires</h3>
+              <table class="table table-hover table-condensed table-striped">
+                <thead>
+                <tr>
+                  <th>Barcode</th>
+                  <th>Questionnaire Type</th>
+                  <th>Comment</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>234232</td>
+                  <td>ID6 Father</td>
+                  <td><input type="text" name="comment" class="form-control" value="" title="" required="required" placeholder="questionnaire was..."></td>
+                </tr>
+                <tr>
+                  <td>230923</td>
+                  <td>ID6 Smoking</td>
+                  <td><input type="text" name="comment" class="form-control" value="" title="" required="required" placeholder="questionnaire was..."></td>
+                </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+    </div>
     <div class="form-group">
       <div class="col-sm-10 col-sm-offset-2">
-        <button type="submit" class="btn btn-primary">Record</button>
+        <button type="submit" class="btn btn-primary">Save Event</button>
       </div>
     </div>
   </form>

@@ -1,0 +1,93 @@
+<h3>Sample Search</h3>
+<div class="row">
+  <div class="col-md-4">
+    <form action="" method="POST" role="form" class="form-horizontal">
+      <div class="form-group">
+        <label for="study" class="col-md-4 control-label">Study</label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" name="study" id="study" placeholder="IIS...">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="participantId" class="col-md-4 control-label">Participant ID</label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" name="participantId" id="participantId" placeholder="100101...">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="sampleType" class="col-md-4 control-label">Sample Type</label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" name="sampleType" id="sampleType" placeholder="Serum...">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="barcode" class="col-md-4 control-label">Barcode</label>
+        <div class="col-md-8">
+          <input type="text" class="form-control" name="barcode" id="barcode" placeholder="123456...">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-8 col-sm-offset-4">
+          <button type="submit" class="btn btn-primary btn-block">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-8">
+    <table class="table table-bordered table-hover table-condensed table-striped">
+    	<thead>
+    		<tr>
+          <th>Barcode</th>
+    			<th>Study</th>
+          <th>Participant ID</th>
+          <th>Event Type</th>
+          <th>Sample Type</th>
+          <th>Amount</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+          <td><a ui-sref="main.lab.sample">645879</a></td>
+          <td>IIS</td>
+          <td>100101</td>
+          <td>ID6</td>
+          <td>Serum</td>
+          <td>800.12 ul</td>
+        </tr>
+        <tr>
+          <td><a ui-sref="main.lab.sample">789456</a></td>
+          <td>IIS</td>
+          <td>100101</td>
+          <td>ID6</td>
+          <td>Serum</td>
+          <td>120.00 ul</td>
+        </tr>
+        <tr>
+          <td><a ui-sref="main.lab.sample">987341</a></td>
+          <td>IIS</td>
+          <td>100101</td>
+          <td>ID6</td>
+          <td>Serum</td>
+          <td>125.23 ul</td>
+        </tr>
+        <tr>
+          <td><a ui-sref="main.lab.sample">973154</a></td>
+          <td>IIS</td>
+          <td>100201</td>
+          <td>ID6</td>
+          <td>Serum</td>
+          <td>1323.10 ul</td>
+        </tr>
+    	</tbody>
+    </table>
+    <ul class="pagination">
+      <li><a href="#">&laquo;</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+  </div>
+</div>
