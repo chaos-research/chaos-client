@@ -149,7 +149,21 @@ module.exports = function (grunt) {
     bowerInstall: {
       app: {
         src: ['<%= yeoman.app %>/index.html'],
-        ignorePath: '<%= yeoman.app %>/'
+        ignorePath: '<%= yeoman.app %>/',
+        exclude: [
+          'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js',
+          'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js',
+          'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js',
+          'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js',
+          'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js',
+          'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js',
+          'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js',
+          'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js',
+          'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js',
+          'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js',
+          'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js',
+          'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js'
+        ]
       },
       sass: {
         src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],

@@ -36,6 +36,14 @@ angular.module('chaos', ['ui.router', 'ui.bootstrap'])
         url: '/sampleSearch',
         templateUrl: 'views/main/lab/sampleSearch.html'
       })
+      .state('main.lab.pullList', {
+        url: '/pullList',
+        templateUrl: 'views/main/lab/pullList.html'
+      })
+      .state('main.lab.processingList', {
+        'url': '/processingList',
+        'templateUrl': 'views/main/lab/processingList.html'
+      })
       .state('main.studyMgmt', {
         abstract: true,
         url: '/studyMgmt',

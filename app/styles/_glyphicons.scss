@@ -1,0 +1,14 @@
+//Glyphicons
+.placeholder > .glyphicon {
+  line-height: 24px;
+  font-size: 24px;
+  height: 24px;
+}
+
+.glyphicon {
+  color: $glyphicon-color;
+
+  &.glyphicon-remove-circle {
+    color: $brand-danger;
+  }
+}

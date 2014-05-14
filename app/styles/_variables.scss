@@ -920,6 +920,8 @@ $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
 //$input-border-focus: $white;  <-- desired color for login, but not everywhere else
 
 //Navbar Defaults
+$dropdown-link-active-bg: $blue-sky;
+$dropdown-link-active-color: $gray-slate-darker;
 
 //Sidebar Navbar Defaults
 $sidebar-navbar-default-bg: $gray-slate-dark;
@@ -937,3 +939,6 @@ $sidebar-navbar-default-link-hover-bg: $blue-sky;
 $footer-default-bg: $navbar-default-bg;
 $footer-default-color: $navbar-default-color;
 $footer-default-border: $navbar-default-border;
+
+//Glyphicons
+$glyphicon-color: $blue-sky;

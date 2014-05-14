@@ -1,0 +1,105 @@
+<h1 class="page-header">Pull Lists</h1>
+<div class="row" ng-controller="ExampleCtl">
+  <div class="col-sm-3">
+    <h3 class="sub-header">List</h3>
+    <div class="container-fluid">
+      <div class="row">
+        <select class="form-control">
+          <option>2014-05-01 Something</option>
+          <option>2014-04-25 Something Else</option>
+          <option>2014-04-20 Pull</option>
+          <option>2014-04-15 My List</option>
+        </select>
+      </div>
+      <div class="row top5">
+        <table class="table table-condensed table-hover table-bordered">
+        	<thead>
+        		<tr>
+              <th></th>
+              <th>Order</th>
+        			<th>Barcode</th>
+        		</tr>
+        	</thead>
+        	<tbody>
+        		<tr>
+              <td><a ng-click=""><span class="glyphicon glyphicon-remove-circle"></span></a></td>
+        			<td>1
+                <span class="pull-right">
+                  <a ng-click=""><span class="glyphicon glyphicon-arrow-down"></span></a>
+                </span></td>
+              <td>654213</td>
+        		</tr>
+            <tr>
+              <td><a ng-click=""><span class="glyphicon glyphicon-remove-circle"></span></a></td>
+              <td>2
+                <span class="pull-right">
+                  <a ng-click=""><span class="glyphicon glyphicon-arrow-down"></span></a>
+                  <a ng-click=""><span class="glyphicon glyphicon-arrow-up"></span></a>
+                </span>
+              </td>
+              <td>423234</td>
+            </tr>
+            <tr>
+              <td>
+                <a ng-click=""><span class="glyphicon glyphicon-remove-circle"></span></a>
+              </td>
+              <td>3
+                <span class="pull-right">
+                  <a ng-click=""><span class="glyphicon glyphicon-arrow-up"></span></a>
+                </span>
+              </td>
+              <td>254789</td>
+            </tr>
+        	</tbody>
+        </table>
+        <button class="btn btn-primary btn-block top5">Save</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <h3 class="sub-header">Search</h3>
+    <table class="table table-bordered table-hover table-condensed table-striped">
+      <thead>
+      <tr>
+        <th>Actions</th>
+        <th>Barcode</th>
+        <th>Study</th>
+        <th>Participant ID</th>
+        <th>Event Type</th>
+        <th>Sample Type</th>
+        <th>Amount</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td></td>
+        <td><input type="text" placeholder="filter..." class="form-control input-sm" ng-model="filter.barcode"></td>
+        <td><input type="text" placeholder="filter..." class="form-control input-sm" ng-model="filter.study"></td>
+        <td><input type="text" placeholder="filter..." class="form-control input-sm" ng-model="filter.participantId"></td>
+        <td><input type="text" placeholder="filter..." class="form-control input-sm" ng-model="filter.eventType"></td>
+        <td><input type="text" placeholder="filter..." class="form-control input-sm" ng-model="filter.sampleType"></td>
+        <td><input type="text" placeholder="filter..." class="form-control input-sm" ng-model="filter.amount"></td>
+      </tr>
+      <tr ng-repeat="sample in samples | filter: filter">
+        <td><a ng-click=""><span class="glyphicon glyphicon-ok-sign"></span></a></td>
+        <td><a ui-sref="main.lab.sample">{{sample.barcode}}</a></td>
+        <td>{{sample.study}}</td>
+        <td>{{sample.participantId}}</td>
+        <td>{{sample.eventType}}</td>
+        <td>{{sample.sampleType}}</td>
+        <td>{{sample.amount}}</td>
+      </tr>
+      </tbody>
+    </table>
+    <ul class="pagination">
+      <li><a href="#">&laquo;</a></li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">&raquo;</a></li>
+    </ul>
+
+  </div>
+</div>

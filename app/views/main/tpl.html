@@ -15,82 +15,88 @@
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Study<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li class="dropdown-header">Study</li>
-            <li><a ui-sref="main.studyMgmt.home">Overview</a></li>
+            <li ui-sref-active="active"><a ui-sref="main.studyMgmt.home"> Overview</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">Contact Mgmt</li>
-            <li><a ui-sref="main.studyMgmt.participants">View Participants</a></li>
+            <li ui-sref-active="active"><a ui-sref="main.studyMgmt.participants"> View Participants</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">Events</li>
-            <li><a ui-sref="main.studyMgmt.eventCalendar">Study Event Calendar</a></li>
-            <li><a ui-sref="main.studyMgmt.recordEvent">Record Study Event</a></li>
+            <li ui-sref-active="active"><a ui-sref="main.studyMgmt.eventCalendar"> Study Event Calendar</a></li>
+            <li ui-sref-active="active"><a ui-sref="main.studyMgmt.recordEvent"> Record Study Event</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown">Laboratory<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li class="dropdown-header">Laboratory</li>
-            <li><a ui-sref="main.lab.home">Overview</a></li>
+            <li ui-sref-active="active"><a ui-sref="main.lab.home">Overview</a></li>
+            <li ui-sref-active="active"><a ui-sref="main.lab.sampleSearch">Sample Search</a></li>
+            <li ui-sref-active="active"><a ui-sref="main.lab.pullList">Pull Lists</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">Processing</li>
-            <li><a ui-sref="nowhere">Process Samples</a></li>
-            <li><a ui-sref="nowhere">Create Processing Plan</a></li>
+            <li ui-sref-active="active"><a ui-sref="main.lab.processingList">Processing List</a></li>
+            <li ui-sref-active="active"><a ui-sref="nowhere">Process Samples</a></li>
+            <li ui-sref-active="active"><a ui-sref="nowhere">Create Processing Plan</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">Testing</li>
-            <li><a ui-sref="nowhere">Assay Setup</a></li>
-            <li><a ui-sref="nowhere">Assay QC</a></li>
+            <li ui-sref-active="active"><a ui-sref="nowhere">Assay Setup</a></li>
+            <li ui-sref-active="active"><a ui-sref="nowhere">Assay QC</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">Storage</li>
-            <li><a ui-sref="main.lab.freezerManagement">Freezer Management</a></li>
-            <li><a ui-sref="nowhere">Storage Containers</a></li>
+            <li ui-sref-active="active"><a ui-sref="main.lab.freezerManagement">Freezer Management</a></li>
+            <li ui-sref-active="active"><a ui-sref="nowhere">Storage Containers</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">Shipping & Receiving</li>
-            <li><a ui-sref="nowhere">Sample Shipping</a></li>
-            <li><a ui-sref="nowhere">Sample Receiving</a></li>
+            <li ui-sref-active="active"><a ui-sref="nowhere">Sample Shipping</a></li>
+            <li ui-sref-active="active"><a ui-sref="nowhere">Sample Receiving</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown">Data                                                                                                                                                                                                                                                <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li class="dropdown-header">Import</li>
-            <li><a ui-sref="data.import">Import Data</a></li>
+            <li ui-sref-active="active"><a ui-sref="data.import">Import Data</a></li>
             <li class="divider"></li>
             <li class="dropdown-header">Export</li>
-            <li><a ui-sref="data.reports">Reports</a></li>
-            <li><a ui-sref="data.exports">Analysis Exports</a></li>
+            <li ui-sref-active="active"><a ui-sref="data.reports">Reports</a></li>
+            <li ui-sref-active="active"><a ui-sref="data.exports">Analysis Exports</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown">Administration                                                                                                                                                                                                                                                 <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li class="dropdown-header"> Study Administration</li>
-            <li><a ui-sref="nowhere">Create Study</a></li>
-            <li><a ui-sref="nowhere">Create Questionnaires (CRFs)</a></li>
+            <li ui-sref-active="active"><a ui-sref="studyCenters">Study Centers</a></li>
+            <li ui-sref-active="active"><a ui-sref="populations">Populations</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header"> Lab Administration</li>
+            <li ui-sref-active="active"><a ui-sref="materials">Materials</a></li>
             <li class="divider"></li>
             <li class="dropdown-header"> Application Administration</li>
-            <li><a ui-sref="studyCenters">Study Centers</a></li>
-            <li><a ui-sref="populations">Populations</a></li>
-            <li><a ui-sref="materials">Materials</a></li>
-            <li><a ui-sref="users">Users</a></li>
-            <li><a ui-sref="dataImport">Import Data</a></li>
+            <li ui-sref-active="active"><a ui-sref="users">Users</a></li>
             <li class="divider"></li>
             <li class="dropdown-header"> System Administration</li>
-            <li><a ui-sref="system.environment">Environment</a></li>
-            <li><a ui-sref="system.API">API</a></li>
+            <li ui-sref-active="active"><a ui-sref="system.environment">Environment</a></li>
+            <li ui-sref-active="active"><a ui-sref="system.API">API</a></li>
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown">User                                                                                                                                                                                                                                                 <b class="caret"></b></a>
+          <a class="dropdown-toggle" data-toggle="dropdown">Help <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a ui-sref="currentUser.profile">Profile</a></li>
-            <li><a ui-sref="currentUser.settings">Settings</a></li>
-            <li class="divider"></li>
-            <li><a ui-sref="logout">Logout</a></li>
+            <li ui-sref-active="active"><a ui-sref="help">Documentation</a></li>
+            <li ui-sref-active="active"><a ui-sref="bug">Report Bug</a></li>
           </ul>
         </li>
-        <li>
-          <a ui-sref="help">Help</a>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown">User                                                                                                                                                                                                                                                 <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li ui-sref-active="active"><a ui-sref="currentUser.profile">Profile</a></li>
+            <li ui-sref-active="active"><a ui-sref="currentUser.settings">Settings</a></li>
+            <li class="divider"></li>
+            <li ui-sref-active="active"><a ui-sref="logout">Logout</a></li>
+          </ul>
         </li>
       </ul>
 

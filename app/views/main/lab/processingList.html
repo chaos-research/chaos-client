@@ -1,0 +1,41 @@
+<h2 class="sub-header">Processing List <small>Samples waiting for processing...</small></h2>
+<div class="table-responsive" ng-controller="ExampleCtl">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Actions</th>
+      <th>Study</th>
+      <th>Participant ID</th>
+      <th>Event Type</th>
+      <th>Sample Type</th>
+      <th>Barcode</th>
+      <th>Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td></td>
+      <td><input type="text" placeholder="filter..." class="form-control input-sm" ng-model="filter.study"></td>
+      <td><input type="text" placeholder="filter..." class="form-control input-sm" ng-model="filter.participantId"></td>
+      <td><input type="text" placeholder="filter..." class="form-control input-sm" ng-model="filter.eventType"></td>
+      <td><input type="text" placeholder="filter..." class="form-control input-sm" ng-model="filter.sampleType"></td>
+      <td><input type="text" placeholder="filter..." class="form-control input-sm" ng-model="filter.barcode"></td>
+      <td><input type="text" placeholder="filter..." class="form-control input-sm" ng-model="filter.amount"></td>
+    </tr>
+    <tr ng-repeat="sample in samples | filter:filter">
+      <td>
+        <div class="btn-group btn-group-sm">
+          <button type="button" class="btn btn-default" title="Process"><span class="glyphicon glyphicon-saved"></span></button>
+          <button type="button" class="btn btn-default" title="Comment"><span class="glyphicon glyphicon-tag"></span></button>
+        </div>
+      </td>
+      <td>{{sample.study}}</td>
+      <td>{{sample.participantId}}</td>
+      <td>{{sample.eventType}}</td>
+      <td>{{sample.sampleType}}</td>
+      <td>{{sample.barcode}}</td>
+      <td>{{sample.amount}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
