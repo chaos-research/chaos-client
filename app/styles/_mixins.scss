@@ -1,0 +1,14 @@
+@mixin filter( $var ){
+  -webkit-filter: blur($var);
+  -moz-filter: blur($var);
+  -o-filter: blur($var);
+  -ms-filter: blur($var);
+  filter: blur($var);
+}
+
+@mixin background-image($var){
+  -webkit-background-size: $var;
+  -moz-background-size: $var;
+  -o-background-size: $var;
+  background-size: $var;
+}
