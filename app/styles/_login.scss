@@ -1,45 +1,44 @@
 .login {
   height: 100vh;
-  background: url('../images/lab.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+  & .login-bg {
+    background: url('../images/lab.jpg') no-repeat center center fixed;
+    @include background-image(cover);
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+
+    display: block;
+
+    @include filter(20px);
+  }
 }
 
 .form-signin {
-  max-width: 330px;
-  padding-top: 150px;
+  padding-top: 250px;
   margin: 0 auto;
+  width: 400px;
+  text-align: center;
+  position: relative;
+  z-index: 101;
 
-  .form-control {
-    position: relative;
-    height: auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 10px;
-    font-size: 16px;
+  & fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    @include box-sizing(border-box);
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
   }
 
-  input {
-    border: 0px solid $white;
-    color: $white;
-    border-bottom-width: 1px;
-    background-color: transparent;
-
-    &:focus {
-      outline: 0;
-    }
-
-    &[type="text"] {
-      margin-bottom: -1px;
-      border-radius: 0;
-    }
-
-    &[type="password"] {
-      margin-bottom: 10px;
-      border-radius: 0;
-    }
+  & fieldset:not(:first-of-type) {
+    display: none;
   }
 }

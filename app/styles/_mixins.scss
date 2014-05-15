@@ -12,3 +12,9 @@
   -o-background-size: $var;
   background-size: $var;
 }
+
+@mixin box-sizing($var) {
+  -webkit-box-sizing: $var;
+  -moz-box-sizing: $var;
+  box-sizing: $var;
+}
