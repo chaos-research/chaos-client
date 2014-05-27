@@ -86,6 +86,15 @@ angular.module('chaos', ['ui.router', 'ui.bootstrap'])
         url: '/home',
         templateUrl: 'views/main/data/home.html'
       })
+      .state('main.admin', {
+        abstract: true,
+        url: '/admin',
+        templateUrl: 'views/main/admin/tpl.html'
+      })
+      .state('main.admin.home', {
+        url: '/home',
+        templateUrl: 'views/main/admin/home.html'
+      })
     ;
 
   });
